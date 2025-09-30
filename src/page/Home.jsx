@@ -22,7 +22,7 @@ const Home = () => {
                 Vanessa Lydia
               </h1>
 
-              <h2 className="mt-4 text-2xl">
+              <h2 className="mt-4 text-2xl font-outfit">
                 I specialize in{" "}
                 <ReactTyped
                   strings={[
