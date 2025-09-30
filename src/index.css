@@ -1,0 +1,44 @@
+
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
+@theme {
+    --color-ActionColor: #F59E0B;
+    --color-bgBlue: #0C3C37;
+    --color-bgLightBlue: #107869;
+
+
+
+    --font-outfit: "outfit", sans-serif;
+  --font-geist-sans: 'Geist-Sans', sans-serif;
+  --font-geist-mono: 'Geist-Mono', monospace;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@keyframes horizontal-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* move one full set left */
+  }
+}
+
+@utility animate-horizontal-marquee {
+  animation: horizontal-marquee 15s linear infinite;
+}
